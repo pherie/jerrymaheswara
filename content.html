@@ -1,0 +1,41 @@
+<div class="{is_login}">
+	{user_info}
+		<h2>Welcome</h2> 
+		<h4>{user_email} - Level : {user_level} </h4>
+	{/user_info}
+</div>
+<div class="{is_logout}">
+	<h4>Title</h4>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<br/>
+	<center> <a href="{base}/contoh/login">Login</a> </center>
+</div>
+<div class="{is_admin}">
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<thead>
+				<tr class="bg-primary">
+					<th>ID</th>
+					<th>Email</th>
+					<th>Password</th>
+					<th>Level</th>
+				</tr>
+			</thead>
+			<tbody>
+				{user_all}
+				<tr>
+					<td>{user_id}</td>
+					<td>{user_email}</td>
+					<td>{user_password}</td>
+					<td>{user_level}</td>
+				</tr>
+				{/user_all}
+			</tbody>
+		</table>
+	</div>
+</div>
